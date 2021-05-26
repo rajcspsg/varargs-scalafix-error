@@ -1,4 +1,5 @@
 class Utils {
 
-  def toVarArgs[T](s: Seq[T]) = s: _*
+  def acceptVarargs[S](s: S*): Unit = {}
+  def toVarArgs[T](s: Seq[T]) = acceptVarargs(s: _*)
 }
